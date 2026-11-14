@@ -1,0 +1,22 @@
+[project]
+name = "copilot2api"
+version = "0.1.0"
+description = "GitHub Copilot account pool with OpenAI-compatible APIs and a web management UI"
+readme = "README.md"
+authors = [
+    { name = "MapleLeaf", email = "197728340@qq.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi>=0.115,<1",
+    "httpx>=0.27,<1",
+    "pydantic>=2.9,<3",
+    "uvicorn[standard]>=0.30,<1",
+]
+
+[project.scripts]
+copilot2api = "copilot2api:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"

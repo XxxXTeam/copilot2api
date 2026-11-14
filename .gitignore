@@ -1,0 +1,21 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Application data and local configuration
+data/
+.env
+
+# Packet captures may contain OAuth tokens and cookies
+*.har
+
+# Frontend dependencies and build output
+node_modules/
+web/dist/
